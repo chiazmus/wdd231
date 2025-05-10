@@ -21,7 +21,7 @@ header {
     color: var(--secondary-text);
 }
 
-header h1 {
+header h2 {
     margin: auto;
     max-width: 95%;
     padding: 1rem 0;
@@ -30,7 +30,7 @@ header h1 {
     align-items: center;
 }
 
-header h1 img {
+header h2 img {
     height: 100%;
     width: auto;
     margin: 0 15px;
