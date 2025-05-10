@@ -1,0 +1,171 @@
+:root {
+    --bg-primary: rgb(250, 253, 255);
+    --bg-secondary: #223;
+    --bg-tertiary: #bbb;
+    --primary-text:black;
+    --secondary-text: #ddd;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    color: var(--secondary-text);
+}
+
+header h1 {
+    margin: auto;
+    max-width: 95%;
+    padding: 1rem 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    height: 100%;
+    width: auto;
+    margin: 0 15px;
+}
+
+#title {
+    font-size: larger;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: var(--bg-secondary);
+    border: none;
+    color: var(--secondary-text);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#menu::after {
+    content: "≡";
+}
+
+#menu.menu-selected::after {
+    content: "✕";
+}
+
+nav {
+    display: none;
+}
+
+nav.menu-selected {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #112;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    font-size: larger;
+    padding: 0.2rem 0;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem 0;
+}
+
+section h2 {
+    background-color: var(--bg-secondary);
+    color: var(--secondary-text);
+    width: 90%;
+    padding: 1rem 5%;
+}
+
+figure {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+.selectors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.selectors button {
+    flex-grow: 1;
+    margin: 0 0.2rem;
+    padding: 0.4rem 0;
+    background-color: var(--bg-secondary);
+    color: var(--secondary-text);
+    border-radius: 10px;
+    border-style: none;
+}
+
+.selectors button:hover {
+    background-color: #334;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses h2 {
+    background-color: #559;
+    color: var(--secondary-text);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.courses h2.unfinished {
+    background-color: #aaf;
+    color: var(--primary-text);
+}
+
+.active {
+    color: rgb(173, 255, 255);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    color: var(--secondary-text);
+}
+

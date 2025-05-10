@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple profile page for Andrew Burnah">
+    <meta name="author" content="Andrew Burnah">
+    <title>Andrew Burnah | WDD 231</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><img src="images/profile-picture.jpg" alt="profile" width="300px" height="400px"><span id="title">Andrew Burnah</span></h1>
+        <button id="menu" aria-label="MenuButton"></button>
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+            <a href="https://github.com/chiazmus/wdd231">Github Profile</a>
+            <a href="https://linkedin.com/">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section id="courseWork">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="nation">
+            <h2>Palmerston North, New Zealand</h2>
+            <figure><img src="images/tui-painting.jpeg" alt="tui-bird"><figcaption>The Tui Bird</figcaption></figure>
+        </section>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="selectors">
+                <button id="allCourses" aria-label="AllCoursesButton">All</button>
+                <button id="cseCourses" aria-label="CSECoursesButton">CSE</button>
+                <button id="wddCourses" aria-label="WDDCoursesButton">WDD</button>
+            </div>
+            <div class="courses" id="courses">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy;<span id="currentyear"></span> Andrew Burnah | New Zealand</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
