@@ -1,0 +1,68 @@
+:root {
+    --bg-primary: #f0f0f0;
+    --bg-secondary: #224;
+    --primary-text: black;
+    --secondary-text: white;
+    --card-bg: #d8d8e6;
+    --card-text: black;
+    --card-border: var(--bg-secondary);
+    --card-padding: 2rem;
+
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--bg-secondary);
+    color: var(--secondary-text);
+    text-align: center;
+}
+
+main {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards {
+    margin: 0 5%;
+    width: 90%;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    align-items: center;
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: var(--card-bg);
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+	align-items: center;
+    border-radius: 10px;
+}
+
+section img {
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+section p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}

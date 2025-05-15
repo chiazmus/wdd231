@@ -60,16 +60,25 @@ header h2 img {
 }
 
 nav {
-    display: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style: none;
 }
 
 nav.menu-selected {
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 1rem;
     background-color: #112;
+}
+
+nav li {
+    text-align: center;
 }
 
 nav a {
