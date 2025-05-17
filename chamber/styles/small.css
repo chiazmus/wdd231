@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #96b2d3;
+    --secondary-color: #F0F4F8;
+    --bg-color: #FFFFFF;
+    --text-color: #1A1A1A;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    /* z-index: 10; */
+}
+
+
+
+.location-marker {
+    font-weight: bold;
+}
+
+
+
+#small {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+
+
+#title-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+
+
+#title-card img {
+    height: 100px;
+    width: auto;
+    margin: 0 0.5rem;
+}
+
+
+
+#menuButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+#menuButton::before {
+    content: "≡";
+}
+
+
+
+#menuButton.open::before {
+    content: "X";
+}
+
+
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+
+nav.open {
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+nav ul {
+    background-color: var(--secondary-color);
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+
+
+li {
+    margin: 0.5rem 0;
+}
+
+
+
+li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+li a:hover {
+    color: whitesmoke;
+}
+
+
+
+main {
+    flex-grow: 1;
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer h3 {
+    font-weight: bold;
+    margin: 0 0 0.2rem 0;
+}
+
+
+
+footer p {
+    padding: 0.2rem;
+    margin: 0;
+}
+
+
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+footer div {
+    margin: 1rem 1rem;
+}
+
+
+
+#social-media {
+    display: flex;
+    justify-content: space-evenly;
+}

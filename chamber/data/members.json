@@ -1,0 +1,60 @@
+{
+    "members" : [
+        {
+        "name": "Totara Enterprises",
+        "address": "123 Avenue Dunedin, NZ",
+        "phoneNumber": "09-4727945",
+        "websiteUrl": "www.totaraenterprises.com",
+        "iconFileName": "totaraenterprises.webp",
+        "membershipLevel": 2,
+        "businessType": "Retail"},
+        {
+            "name": "Southern Lights Limited",
+            "address": "77 Avenue Hamilton, NZ",
+            "phoneNumber": "027-1202903",
+            "websiteUrl": "www.southernlightslimited.co.nz",
+            "iconFileName": "southernlightslimited.webp",
+            "membershipLevel": 2,
+            "businessType": "Hospitality"},
+        {
+            "name": "Fantail Group",
+            "address": "61 Road Napier, NZ",
+            "phoneNumber": "027-6030186",
+            "websiteUrl": "www.fantailgroup.com",
+            "iconFileName": "fantailgroup.webp",
+            "membershipLevel": 2,
+            "businessType": "Retail"},
+        {
+            "name": "Silverfern Ltd",
+            "address": "151 Avenue Auckland, NZ",
+            "phoneNumber": "021-7407167",
+            "websiteUrl": "www.silverfernltd.co.nz",
+            "iconFileName": "silverfernltd.webp",
+            "membershipLevel": 2,
+            "businessType": "Hospitality"},
+        {
+            "name": "Aotearoa Limited",
+            "address": "173 Street Christchurch, NZ",
+            "phoneNumber": "027-8113353",
+            "websiteUrl": "www.aotearoalimited.net.nz",
+            "iconFileName": "aotearoalimited.webp",
+            "membershipLevel": 1,
+            "businessType": "Hospitality"},
+        {
+        "name": "Pacific Crest Limited",
+        "address": "169 Street Auckland, NZ",
+        "phoneNumber": "027-3317540",
+        "websiteUrl": "www.pacificcrestlimited.co.nz",
+        "iconFileName": "pacificcrestlimited.webp",
+        "membershipLevel": 3,
+        "businessType": "Technology"},
+        {
+        "name": "Tui Enterprises",
+        "address": "56 Street Auckland, NZ",
+        "phoneNumber": "09-8661332",
+        "websiteUrl": "www.tuienterprises.com",
+        "iconFileName": "tuienterprises.webp",
+        "membershipLevel": 2,
+        "businessType": "Manufacturing"}        
+    ]
+}
