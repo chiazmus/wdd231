@@ -136,24 +136,78 @@ li a:hover {
 
 main {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+#viewMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#memberCards {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+#memberCards > :nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+#memberCards.gridView {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#memberCards .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#memberCards p, #memberCards h3 {
+    margin: 0.5rem;
+}
+
+#memberCards .list-invisible {
+    display: none;
+}
+
+#memberCards.gridView .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+#memberCards.gridView .list-invisible {
+    display: block;
+}
+
+#memberCards.gridView img {
+    height: 128px;
+    width: auto;
+}
 
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
+    min-height: 330px;
+    box-sizing: border-box;
 }
-
-
 
 footer h3 {
     font-weight: bold;
     margin: 0 0 0.2rem 0;
 }
-
 
 
 footer p {
@@ -162,21 +216,16 @@ footer p {
 }
 
 
-
 footer a {
     text-decoration: none;
     color: var(--text-color);
+    margin: 0 2rem;
 }
-
-
 
 footer div {
-    margin: 1rem 1rem;
+    margin: 0.5rem 1rem;
 }
-
-
 
 #social-media {
     display: flex;
-    justify-content: space-evenly;
 }
