@@ -140,6 +140,10 @@ main {
     flex-direction: column;
 }
 
+h1 {
+    margin: 1rem;
+}
+
 #viewMenu {
     display: flex;
     flex-direction: column;
