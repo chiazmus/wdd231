@@ -162,7 +162,7 @@ h1 {
 
 #memberCards.gridView {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     margin: 1rem;
 }
@@ -195,8 +195,67 @@ h1 {
 }
 
 #memberCards.gridView img {
-    height: 128px;
+    max-height: 128px;
     width: auto;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.business-card {
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template: 0.3fr 1fr / 0.3fr 1fr;
+    overflow-wrap: break-word;
+}
+
+.business-card .tag {
+    margin: 0 0 0.5rem 0;
+    border-bottom: 1px solid black;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.business-card img {
+    grid-row: 2;
+    max-width: 128px;
+    margin: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.info p {
+    margin: 0.5rem 0;
+}
+
+.section-card {
+    margin: 15px;
+    background-color: var(--secondary-color);
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-card h2 {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
 
 footer {
@@ -223,7 +282,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: var(--text-color);
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 footer div {
@@ -232,4 +291,8 @@ footer div {
 
 #social-media {
     display: flex;
+}
+
+#disclaimer {
+    text-align: center;
 }
