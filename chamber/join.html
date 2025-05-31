@@ -50,10 +50,11 @@
             <label>Last Name<input type="text" name="lastName" title="Please enter your family name." class="requiredElement" placeholder="Last Name" autocomplete="family-name" required></label>
             <label>Title (Optional)<input type="text" id="orgTitle" name="title" placeholder="Junior Developer" autocomplete="organization-title" title="Please enter your title using only letters, hyphens, and spaces. Minimum 7 characters." pattern="^[A-Za-z\-\s]{7,}$"></label>
             <label>Email<input type="email" name="email" title="Please enter your email address." class="requiredElement" placeholder="email@example.com" autocomplete="email"></label>
-            <label>Phone (Optional)<input type="tel" name="phoneNumber" title="Please enter a valid telephone number." placeholder="1112346789" autocomplete="tel-national"></label>
+            <label>Phone (Optional)<input type="tel" name="phoneNumber" title="Please enter a valid telephone number." placeholder="1112346789" autocomplete="tel"></label>
             <label>Organization<input type="text" name="organization" title="Please enter your organization name." class="requiredElement" placeholder="Company inc co." autocomplete="organization" required></label>
             <label>Description (Optional)<textarea name="companyDescription" title="Description" placeholder="Description"></textarea></label>
             <label>Membership Level<select name="membershipLevel" class="requiredElement" id="membershipLevel" required>
+                <option value="" disabled selected>Please Select an Option</option>
                 <option value="non-profit">Non Profit</option>
                 <option value="bronze">Bronze</option>
                 <option value="silver">Silver</option>
