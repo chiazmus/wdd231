@@ -178,3 +178,31 @@ footer {
     color: var(--secondary-text);
 }
 
+dialog {
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0,0,0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: none;
+    background-color: var(--bg-secondary);
+    color: var(--secondary-text);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+dialog button:hover {
+    color: red;
+}

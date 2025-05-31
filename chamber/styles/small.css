@@ -258,6 +258,138 @@ h1 {
     width: 100%;
 }
 
+.membershipLevels {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.membershipLevels h3{
+    margin-left: 1rem;
+    perspective: 100px;
+}
+
+.membership-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    margin: 1rem 1rem;
+    padding: 0.5rem 0;
+    align-items: center;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    opacity: 0;
+    transform: rotateY(90deg); 
+    transform-origin: bottom center; 
+    backface-visibility: visible;
+    animation: flipIn 1.5s ease-out forwards; 
+    /* Initially I wanted this to be longer, but it really hurts the performance SEO metric... so I left it faster. */
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(odd) {
+    animation-delay: 0.3s;
+    
+}
+
+.membership-card h3 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+@keyframes flipIn {
+    0% {
+        opacity: 0;
+        transform: rotateY(270deg); 
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg); 
+    }
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1rem;
+    flex-grow: 1;
+    /* max-width: 500px; */
+}
+
+.requiredElement {
+    border-color: #b22;
+    border-left: 4px solid #b22;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid #333;
+    min-height: 32px;
+    height: 2rem;
+}
+
+button[type=submit]{
+    border: 1px solid #333;
+    height: 2.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+button[type=submit]:hover {
+    background-color: #ccc;
+}
+
+dialog {
+    width: clamp(300px, 450px, 600px);
+    background-color: var(--bg-color);
+    padding: 0;
+    border-radius: 5px;
+}
+
+dialog h3 {
+    margin: 0 0 0.5rem 0;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+dialog p {
+    margin: 1rem 0.5rem;
+}
+
+#closeModal {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);

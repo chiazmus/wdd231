@@ -2,6 +2,7 @@ const courseDiv = document.querySelector('#courses');
 const allButton = document.querySelector('#allCourses');
 const cseButton = document.querySelector('#cseCourses');
 const wddButton = document.querySelector('#wddCourses');
+const courseDetails = document.querySelector('#courseDetails');
 
 const courses = [
     {
@@ -83,6 +84,24 @@ const courses = [
     }
 ]
 
+function displayCourseDetails(course){
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</h3>
+    <p><strong>Certificate</strong>: ${course.certificate}</h3>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>`;
+    courseDetails.showModal();
+    const closeModal = document.querySelector('#closeModal');
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    })
+}
+
 function clearCourses(){
     while (courseDiv.firstChild){
         courseDiv.removeChild(courseDiv.lastChild)
@@ -96,6 +115,9 @@ function addCourse(course){
         newCourse.classList.add('unfinished');
     }
     courseDiv.appendChild(newCourse);    
+    newCourse.addEventListener("click", () => {
+    displayCourseDetails(course);
+    });
 }
 
 function creditSum(courses){

@@ -62,6 +62,16 @@
         flex-grow: 1;
     }
 
+    .membershipLevels {
+        margin: 0;
+    }
+
+    .formContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
     footer {
         display: flex;
         flex-direction: row;

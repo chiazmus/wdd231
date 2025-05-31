@@ -22,8 +22,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/formsubmission.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,36 +33,17 @@
         <button id="menuButton" aria-label="Menu"></button>
         <nav id="navigation">
             <ul>
-                <li><a href="index.html" class="location-marker">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html" class="location-marker">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <img src="images/hero.webp" alt="hero-img" width="900" height="599" loading="lazy" id="hero-img">
-        <h1>Home</h1>
-        <p id="disclaimer">Please be aware that all of the companies on this page are in fact fictional for now.</p>
-
-        <div class="sections">
-
-        <section id="current-events" class="section-card">
-            <h2>Events</h2>
-        </section>
-
-        <section id="current-weather" class="section-card">
-            <h2>Current Weather</h2>
-        </section>
-
-        <section id="weather-forcast" class="section-card">
-            <h2>Weather Forcast</h2>
-        </section>
-
+        <div id="results">
+            <!-- Gonna use JS to fill this innnnn... -->
         </div>
-
-        <section id="spotlights">
-        </section>
     </main>
     <footer>
         <div>
