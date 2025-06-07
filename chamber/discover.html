@@ -14,13 +14,14 @@
     <link rel="preload" href="images/facebook.png" as="image">
     <link rel="preload" href="images/instagram.png" as="image">
     <link rel="preload" href="images/linkedin.png" as="image">
+    <link rel="preload" href="images/linton-military.webp" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/medium.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/larger.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <header>
@@ -39,6 +40,8 @@
         </nav>
     </header>
     <main>
+        <aside id="messageAside">
+        </aside>
         <div id="placeCards">
         </div>
     </main>
@@ -65,5 +68,6 @@
     <script src="scripts/placecard.js" type="module"></script>
     <script src="scripts/date.js" type="module"></script>
     <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/lastvisit.js" type="module"></script>
 </body>
 </html>

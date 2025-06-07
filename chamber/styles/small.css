@@ -6,8 +6,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -419,6 +417,8 @@ dialog p {
     margin: auto;
     width: 100%;
     height: auto;
+    aspect-ratio: 600 / 337;
+    object-fit: cover;
     grid-area: photo;
 }
 
@@ -436,6 +436,14 @@ dialog p {
     grid-area: button;
     width: fit-content;
     margin: 0.5rem;
+}
+
+#messageAside {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
 }
 
 footer {

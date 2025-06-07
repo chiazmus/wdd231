@@ -15,7 +15,7 @@ const generateCard = (place) => {
     img.alt = `Photo of ${place.name}`;
     img.width = 600;
     img.height = 337;
-    img.loading = 'lazy';
+    // img.loading = 'lazy';
     description.textContent = place.description;
     location.textContent = place.address;
     learnMore.textContent = 'Learn More';
