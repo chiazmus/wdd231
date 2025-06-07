@@ -7,9 +7,9 @@
     <meta name="author" content="Andrew Burnah">
     <meta property="og:title" content="Chamber of Commerce Palmerston North, New Zealand"/>
     <meta property="og:description" content="A Chamber of Commerce Site for the city of Palmerston North, New Zealand"/>
-    <meta property="og:image" content="images/palmy-hopwood-tower.webp"/>
+    <meta property="og:image" content="https://chiazmus.github.io/wdd231/chamber/images/palmy-hopwood-tower.webp"/>
     <meta property="og:url" content="https://chiazmus.github.io/wdd231/chamber/index.html"/>
-    <title>Home - Chamber of Commerce Palmerston North</title>
+    <title>Join - Chamber of Commerce Palmerston North</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preload" href="images/facebook.png" as="image">
     <link rel="preload" href="images/instagram.png" as="image">
@@ -19,10 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/formsubmission.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,14 +33,13 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="location-marker">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="location-marker">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="results">
-            <!-- Gonna use JS to fill this innnnn... -->
+        <div id="placeCards">
         </div>
     </main>
     <footer>
@@ -65,5 +62,8 @@
             <p id="lastModified"></p>
         </div>
     </footer>
+    <script src="scripts/placecard.js" type="module"></script>
+    <script src="scripts/date.js" type="module"></script>
+    <script src="scripts/navigation.js" type="module"></script>
 </body>
 </html>

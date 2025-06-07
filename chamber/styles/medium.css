@@ -1,0 +1,14 @@
+@media screen and (min-width: 641px) {
+    .place-card {
+    display: grid;
+    grid-template-areas: "photo name"
+    "photo description"
+    "photo location"
+    "photo button";
+    grid-template-columns: 300px 1fr;
+    }
+
+    .place-card img {
+        width: 300px;
+    }
+}

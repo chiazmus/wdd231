@@ -1,0 +1,63 @@
+:root {
+    --bg-accent-color: #8a3838;
+    --bg-accent-secondary: #444;
+    --bg-primary-color: #e4e2e2;
+    --text-primary-color: #333;
+    --text-accent-color: #fff;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, p {
+    margin: 1rem;
+}
+
+header {
+    background-color: var(--bg-accent-color);
+    color: var(--text-accent-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.card {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 80%, 800px);
+    border: 1px solid var(--text-primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--bg-accent-secondary);
+    color: var(--text-accent-color);
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.card img {
+    margin: 5%;
+    width: 90%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--bg-accent-color);
+    color: var(--text-accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
