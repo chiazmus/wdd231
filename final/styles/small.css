@@ -1,0 +1,281 @@
+:root {
+    --bg-accent-color: #8a3838;
+    --bg-accent-secondary: #444;
+    --bg-primary-color: #e4e2e2;
+    --text-primary-color: #333;
+    --text-accent-color: #fff;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#menuButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--bg-accent-color);
+    border: none;
+    color: var(--text-accent-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#menuButton::before {
+    content: "↷";
+    transition: transform 1s ease;
+    display: inline-block;
+}
+
+
+
+#menuButton.open::before {
+    transform: rotate(540deg);
+}
+
+nav {
+    background-color: var(--bg-accent-color);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+
+nav.open {
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+nav ul {
+    background-color: var(--bg-accent-color);
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+
+
+li {
+    margin: 0.5rem 0;
+}
+
+
+
+li a {
+    text-decoration: none;
+    color: var(--text-accent-color);
+}
+
+
+
+li a:hover {
+    font-weight: bold;
+}
+
+h1, h2, h3, p {
+    margin: 1rem;
+}
+
+header {
+    background-color: var(--bg-accent-color);
+    color: var(--text-accent-color);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#pageTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--text-accent-color);
+    padding: 0.5rem;
+    background-color: rgb(51, 51, 51, 80%);
+    border-radius: 10px;
+}
+
+#heroContainer {
+  max-height: 600px; /* Set your desired maximum height */
+  width: 100%;
+  overflow: hidden; /* This is the key: it hides overflowing content */
+  /* Optional: Set a width if you want to control horizontal cropping as well */
+  /* width: 300px; */
+}
+
+#heroImg {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+.spotlightCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 80%, 800px);
+    border: 1px solid var(--text-primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--bg-accent-secondary);
+    color: var(--text-accent-color);
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.card img {
+    margin: 5%;
+    width: 90%;
+    height: auto;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.card ul {
+    list-style: none;
+    margin: 0.5rem 5%;
+    padding: 0;
+    width: 90%;
+    flex-grow: 1;
+}
+
+.card li {
+    margin: 0.5rem;
+    width: 100%;
+}
+
+.card button {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
+
+.wayfind {
+    font-weight: bold;
+}
+
+#dungeonCards, #joinCards {
+    width: 90%;
+    margin: 1rem 5%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1rem;
+}
+
+#dungeonCards .card, #joinCards .card {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#dungeonCards img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    max-width: 600px;
+    /* max-width: 500px; */
+}
+
+.requiredElement {
+    border-color: #b22;
+    border-left: 4px solid #b22;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid #333;
+    min-height: 32px;
+    height: 2rem;
+}
+
+button[type=submit]{
+    border: 1px solid #333;
+    height: 2.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+button[type=submit]:hover {
+    background-color: #ccc;
+}
+
+#joinContainer {
+    width: 100%;
+    height: 100%;
+}
+
+dialog {
+    width: clamp(300px, 80%, 800px);
+    margin: auto;
+    position: relative;
+    background-color: var(--bg-primary-color);
+    border-radius: 10px;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--bg-accent-secondary);
+    color: var(--text-accent-color);
+    border: none;
+}
+
+dialog h3 {
+    background-color: var(--bg-accent-secondary);
+    color: var(--text-accent-color);
+    margin: 0;
+    padding: 1rem 0.5rem;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--bg-accent-color);
+    color: var(--text-accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Burnah">
+    <meta name="description" content="A fictional site for the Guild of Adventurers, a place for heros (or maybe villains) to find their next adventure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Dungeons - Guild of Adventurers</title>
+</head>
+<body>
+    <header>
+        <h2>Guild of Adventurers</h2>
+        <nav id="navigation">
+            <button id="menuButton" aria-label="menu"></button>
+            <ul class="navBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="dungeons.html" class="wayfind">Dungeons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Dungeons - Guild of Adventurers</h1>
+        <h2>Every adventure has to start somewhere.</h2>
+        <p>Take a look at some of the dungeons that are currently unexplored!  For a small fee, we can pair you with a party and send you on your way to find riches galore!</p>
+        <div id="dungeonCards">
+            <!-- To add with JS -->
+        </div>
+        <dialog id="dungeonDialog">
+            <!-- To add with JS too -->
+        </dialog>
+    </main>
+    <footer>
+            <p>&copy;<span id="currentyear"></span> Guild of Adventurers™ </p>
+            <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/date.js" type="module"></script>
+    <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/populateDungeons.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Burnah">
+    <meta name="description" content="A fictional site for the Guild of Adventurers, a place for heros (or maybe villains) to find their next adventure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Dungeons - Guild of Adventurers</title>
+</head>
+<body>
+    <header>
+        <h2>Guild of Adventurers</h2>
+        <nav id="navigation">
+            <button id="menuButton" aria-label="menu"></button>
+            <ul class="navBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html" class="wayfind">Join</a></li>
+                <li><a href="dungeons.html">Dungeons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join - Guild of Adventurers</h1>
+        <div id="joinContainer">
+            <form action="thankyou.html" method="get">
+                <h3>Membership Application Form</h3>
+                <label>First Name<input type="text" name="firstName" title="Please enter your given name." class="requiredElement" placeholder="First Name" autocomplete="given-name" required></label>
+                <label>Last Name<input type="text" name="lastName" title="Please enter your family name." class="requiredElement" placeholder="Last Name" autocomplete="family-name" required></label>
+                <label>Email<input type="email" name="email" title="Please enter your email address." class="requiredElement" placeholder="email@example.com" autocomplete="email"></label>
+                <label>Phone (Optional)<input type="tel" name="phoneNumber" title="Please enter a valid telephone number." placeholder="1112346789" autocomplete="tel"></label>
+                <label>Class<input type="text" id="class" class="requiredElement" name="class" placeholder="TechnoMage" title="Please enter your class or skillset using only letters, hyphens, and spaces. Minimum 3 characters." pattern="^[A-Za-z\-\s]{3,}$" required></label>
+                <label>Party<select name="groupMembership" class="requiredElement" id="groupMembership" required>
+                    <option value="" disabled selected>Please Select an Option</option>
+                </select></label>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Apply for Membership</button>
+            </form>
+            <aside>
+                <h3>Check out some of the parties you could join!</h3>
+                <div id="joinCards">
+                    <!-- I'ma put these in w/ js -->
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+            <p>&copy;<span id="currentyear"></span> Guild of Adventurers™ </p>
+            <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/date.js" type="module"></script>
+    <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/populateParties.js" type="module"></script>
+</body>
+</html>

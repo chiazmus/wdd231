@@ -1,0 +1,51 @@
+[
+  {
+    "name": "The Whispering Caves",
+    "description": "Brave adventurers, delve into the Whispering Caves, where the echoes of ancient spirits guide and mislead. Navigate treacherous tunnels and face the spectral guardians of forgotten lore. This dungeon is known for its eerie atmosphere and the disembodied whispers that seem to emanate from the very stones.",
+    "dangerLevel": 3,
+    "deepDescription": "The Whispering Caves stretch for miles beneath the earth, their twisting passages constantly shifting as if alive. The disembodied whispers are believed to be remnants of a long-dead civilization, and many who enter are driven mad or led astray by the voices. No map stays accurate for long, and arcane interference makes magical navigation unreliable. Expeditions often vanish without trace, with only echoing screams returning to the surface.\n\nRumors speak of a hidden chamber deep within the caves that holds the Echoheart Gem—a sentient crystal said to grant insight into lost languages and forgotten magic. Other legends tell of spectral tomes bound in soul-thread, containing prophecies written by the dead themselves. Few who seek these treasures ever return, and none with proof.",
+    "img": "./images/whispering-caves.webp"
+  },
+  {
+    "name": "The Sunken City of Azmar",
+    "description": "Descend into the depths of the Sunken City of Azmar, a once-proud metropolis now claimed by the sea. Battle aquatic horrors and uncover the secrets of a civilization lost to time. Beware the ancient magic that still lingers within its flooded ruins.",
+    "dangerLevel": 4,
+    "deepDescription": "Azmar's ruins lie in a deep ocean trench, requiring either potent water-breathing magic or advanced submersible equipment to reach. The city is haunted by the remnants of its drowned inhabitants, now transformed into sea wraiths bound by the cursed tidal wards that once protected the city. Most expeditions are turned back by powerful currents, extreme pressure, and the ever-present threat of awakening the Leviathan that sleeps beneath the palace.\n\nAmong the submerged ruins lies the Vault of Tides, said to house the Trident of Azmar—a relic capable of controlling sea creatures and shaping currents. Pearls the size of fists, enchanted coral weapons, and gold coins bearing the visage of drowned kings are said to litter the city’s flooded plazas, waiting for a diver brave—or foolish—enough to claim them.",
+    "img": "./images/sunken-city.webp"
+  },
+  {
+    "name": "The Obsidian Citadel",
+    "description": "Journey to the Obsidian Citadel, a fortress of dark magic ruled by a tyrannical sorcerer. Overcome cunning traps and powerful enchantments to reach the heart of the citadel, where a final confrontation awaits.",
+    "dangerLevel": 5,
+    "deepDescription": "The Obsidian Citadel is a constantly shifting fortress that reacts to intruders by altering its layout. The sorcerer who rules it sealed himself within a nexus of pure void energy, making any direct magical assault near-suicidal. Its defenders include not only summoned horrors but former adventurers enslaved by powerful mind-control sigils. No one has breached the inner sanctum and returned sane, let alone victorious.\n\nThose few surviving accounts speak of the Blackstar Crown, a relic allowing control over shadows and minds alike, locked in the sorcerer’s vault. Other rumors tell of the Grimoire of the End Gate, a book that can summon or banish entire armies with a word. Treasures beyond mortal valuation lie untouched behind veils of cursed glass and obsidian guardians.",
+    "img": "./images/obsidian-citadel.webp"
+  },
+  {
+    "name": "The Crystal Mines of Kryll",
+    "description": "Explore the dazzling Crystal Mines of Kryll, a subterranean labyrinth filled with shimmering formations and deadly creatures. Unearth rare treasures and face the crystalline guardians that protect this underground wonder.",
+    "dangerLevel": 3,
+    "deepDescription": "The mines' natural beauty hides their lethal nature. Resonant vibrations from the crystals disrupt magical spells and amplify ambient sound, making stealth impossible and speech dangerous. Several sections of the mine are unstable, collapsing without warning. Expeditions have been lost to sudden crystal growths that entomb them, and some miners report being hunted by sentient shards—crystalline echoes of those who died within.\n\nIt is said that deep within the lowest chamber lies the Prism Core, a multifaceted gem of immense power that refracts magical energy into new and unpredictable forms. Alongside it may be veins of mana-reactive crystals, capable of powering entire cities or crafting arcane weaponry. Traders whisper of mirrorsteel—a rare alloy found only here—used in forging blades that can slice through both body and soul.",
+    "img": "./images/crystal-mines.webp"
+  },
+  {
+    "name": "The Forgotten Temple of Xantus",
+    "description": "Venture into the Forgotten Temple of Xantus, a crumbling edifice dedicated to a long-lost deity. Decipher ancient riddles and battle the temple's zealous protectors to claim the divine artifacts hidden within.",
+    "dangerLevel": 4,
+    "deepDescription": "The temple is protected by divine wards that erase memories and twist perceptions, making progress almost impossible without divine favor or relics of Xantus himself. The protectors—once priests, now ascetic undead—believe themselves still alive and wage a holy war against intruders. Additionally, the structure itself lies in an unstable tectonic region, with frequent quakes threatening collapse.\n\nAt its core lies the Radiant Reliquary, a vault said to hold the Sunshard—a fragment of divine light that can cure any affliction or raise the dead. Sacred scrolls, glowing with eternal script, and relics of celestial metal are also said to rest within, waiting to bless—or curse—those who claim them.",
+    "img": "./images/forgotten-temple.webp"
+  },
+  {
+    "name": "The Shadowfen Labyrinth",
+    "description": "Brave the Shadowfen Labyrinth, a maze of twisted paths and treacherous swamps. Navigate the murky depths and confront the shadowy beasts that lurk within this forsaken place.",
+    "dangerLevel": 3,
+    "deepDescription": "Shadowfen shifts with the seasons and tides, its paths submerged and reshaped regularly. Magical darkness permeates certain sections, rendering torches useless. Worse still, an ancient curse causes compasses and magical tracking to fail. Local legends tell of a guardian beast that moves the labyrinth itself to trap those who enter. Few explorers make it past the first few miles before succumbing to exposure, starvation, or madness.\n\nDeep in the heart of the swamp lies the Swamp Throne, overgrown with black lotus—a flower said to grant visions of the future or open gates to other realms. Hidden among the roots are the Warden’s Blades, twin daggers that strike from shadow and leave no wound unhealed. Swamp-gold idols and lost treasures from countless failed expeditions are rumored to litter the muck, guarded by ancient spirits.",
+    "img": "./images/shadowfen-labyrinth.webp"
+  },
+  {
+    "name": "The Vault of the Iron King",
+    "description": "Infiltrate the Vault of the Iron King, a heavily fortified complex guarded by mechanical sentinels. Overcome intricate puzzles and powerful automatons to reach the king's treasure chamber.",
+    "dangerLevel": 4,
+    "deepDescription": "The vault is buried beneath a mountain, its entrance hidden beneath centuries of rock and debris. Inside, the Iron King's defense network—automated centuries ago—remains active, evolving and self-repairing. The puzzles within require knowledge of ancient dialects and machine logic long forgotten. Several parties have been destroyed simply by triggering one of the thousands of failsafes. The deeper chambers are said to be locked by soul-forged keys, lost to time.\n\nLegends claim the vault holds the Iron King’s Core—a sentient engine capable of powering constructs or cities indefinitely. Chests of starsteel ingots, cogwork artifacts, and schematics for forgotten technologies are said to lie in stasis, protected by time-locked vaults. The greatest prize may be the Crown of Directives, which grants dominion over all lesser machines—if it doesn’t overwrite the wearer’s will first.",
+    "img": "./images/vault-of-the-iron-king.webp"
+  }
+]

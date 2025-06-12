@@ -1,0 +1,90 @@
+[
+  {
+    "adventurerType": "Cleric",
+    "location": "The Dungeons of Daggorath",
+    "partyLeader": "Elena Meadowlight",
+    "totalPartyMembers": 4,
+    "expectedLoot": "3000 gp",
+    "dangerLevel": "Medium"
+  },
+  {
+    "adventurerType": "Warrior",
+    "location": "The Scorched Peaks",
+    "partyLeader": "Grommash Stonefist",
+    "totalPartyMembers": 5,
+    "expectedLoot": "2000 gp",
+    "dangerLevel": "High"
+  },
+  {
+    "adventurerType": "Rogue/Ranger",
+    "location": "The Daelian Desert",
+    "partyLeader": "Kaelen Swiftshadow",
+    "totalPartyMembers": 3,
+    "expectedLoot": "2000 gp",
+    "dangerLevel": "Medium"
+  },
+  {
+    "adventurerType": "Spellcaster/Technomage",
+    "location": "The Sword Coast",
+    "partyLeader": "Laura Starfall",
+    "totalPartyMembers": 4,
+    "expectedLoot": "3000 gp",
+    "dangerLevel": "Low"
+  },
+  {
+    "adventurerType": "Ranger / Gunslinger",
+    "location": "The Roving Forest",
+    "partyLeader": "Orion Quickdraw",
+    "totalPartyMembers": 3,
+    "expectedLoot": "1000 gp",
+    "dangerLevel": "Medium"
+  },
+  {
+    "adventurerType": "Cleric",
+    "location": "The Verdant Plains",
+    "partyLeader": "Faelan Greenbeard",
+    "totalPartyMembers": 4,
+    "expectedLoot": "2000 gp",
+    "dangerLevel": "Low"
+  },
+  {
+    "adventurerType": "Paladin",
+    "location": "The Sunken City of Eldoria",
+    "partyLeader": "Sir Reginald steadfast",
+    "totalPartyMembers": 5,
+    "expectedLoot": "4000 gp",
+    "dangerLevel": "High"
+  },
+  {
+    "adventurerType": "Bard",
+    "location": "The Whispering Caves",
+    "partyLeader": "Lyra Songweaver",
+    "totalPartyMembers": 3,
+    "expectedLoot": "1500 gp",
+    "dangerLevel": "Medium"
+  },
+  {
+    "adventurerType": "Druid",
+    "location": "The Ancient Redwood Forest",
+    "partyLeader": "Willowbark Elderwood",
+    "totalPartyMembers": 4,
+    "expectedLoot": "2500 gp",
+    "dangerLevel": "Low"
+  },
+  {
+    "adventurerType": "Barbarian",
+    "location": "The Volcanic Wastes",
+    "partyLeader": "Throk Bloodaxe",
+    "totalPartyMembers": 4,
+    "expectedLoot": "2800 gp",
+    "dangerLevel": "Very High"
+  },
+  {
+    "adventurerType": "Monk",
+    "location": "The Celestial Temple",
+    "partyLeader": "Zenith Harmony",
+    "totalPartyMembers": 2,
+    "expectedLoot": "3500 gp",
+    "dangerLevel": "Medium"
+  }
+]
