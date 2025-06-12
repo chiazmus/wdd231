@@ -13,7 +13,6 @@ const addDungeon = (dungeon) => {
         try {
             window.location.href = './dungeons.html';
         } catch (error) {
-            console.log('There was an error.', error);
             alert('There was an error going to that page.');
         }
     });
@@ -41,7 +40,6 @@ const addParty = (party) => {
         try {
             window.location.href = './join.html';
         } catch (error) {
-            console.log('There was an error.', error);
             alert('There was an error going to that page.');
         }
     });
