@@ -279,3 +279,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+footer a {
+    margin: 1rem 0;
+}
