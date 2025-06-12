@@ -57,7 +57,7 @@ async function getDungeonInfo() {
         let data = await response.json();
         populateDungeons(data);
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }
 

@@ -84,7 +84,7 @@ async function getDungeonInfo() {
         let data = await response.json();
         populateDungeons(data);
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }
 
@@ -94,7 +94,7 @@ async function getPartyInfo() {
         let data = await response.json();
         populateParties(data);
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }
 

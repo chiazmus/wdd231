@@ -47,7 +47,7 @@ async function getPartyInfo() {
         let data = await response.json();
         populateParties(data);
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }
 
